@@ -1,7 +1,7 @@
 document.addEventListener("scroll", function () {
   const header = document.getElementById("header");
 
-  if (window.scrollY > 50) {
+  if (window.scrollY > 180) {
     // Ajuste este valor conforme necessário
     header.classList.add("scrolled");
   } else {
@@ -9,7 +9,7 @@ document.addEventListener("scroll", function () {
   }
 });
 
-const dataAlvo = new Date("2025-02-15T00:00:00").getTime();
+const dataAlvo = new Date("2025-02-15T20:00:00").getTime();
 
 // Atualiza a contagem a cada segundo
 const contador = setInterval(function () {
@@ -40,3 +40,24 @@ const contador = setInterval(function () {
     document.querySelector(".dados").style.display = "none"; // Esconde a contagem
   }
 }, 1000);
+
+
+
+const imagens = document.querySelector('.imagens');
+const totalImagens = imagens.children.length;
+let index = 0;
+
+function trocarImagem() {
+    index = (index + 1) % totalImagens;
+    if (index === 0) {
+        imagens.style.transition = 'none'; 
+        imagens.style.transform = `translateX(0)`; 
+        setTimeout(() => {
+            imagens.style.transition = 'transform 1s ease'; 
+            imagens.style.transform = `translateX(-${index * 100}%)`; 
+        }, 50); 
+    } else {
+        imagens.style.transform = `translateX(-${index * 100}%)`; 
+    }
+}
+setInterval(trocarImagem, 2000);
