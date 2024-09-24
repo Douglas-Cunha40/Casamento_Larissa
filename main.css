@@ -1,270 +1,358 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #781b77;
-    transition: background-color 0.5s; /* Animação suave na mudança de cor */
-    z-index: 1000; /* Certifica que o cabeçalho está acima do conteúdo */
-    position: fixed; /* Fixa o cabeçalho no topo */
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #781b77;
+  transition: background-color 0.5s;
+  z-index: 1000;
+  position: fixed;
 }
 
 .header.scrolled {
-    background-color: #200020; /* Cor ao rolar (ajuste conforme necessário) */
-  }
-
-header nav ul{
-    display: flex;
-    gap:35px;
+  background-color: #c213ee;
 }
 
-header nav ul a{
-    text-decoration: none;
-    list-style: none;
-    font-family: "Quicksand", sans-serif; 
-    padding: 8px 16px;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 1;
-    border-radius: 100px;
-    border: 2px solid transparent;
-    transition: .3s all ease-in-out;
+header nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+  padding: 8px 16px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  transition: 0.3s all ease-in-out;
 }
 
 header nav ul a:hover {
-    border-color: #fccafc; 
-    background-color: transparent; 
+  border-color: #fccafc;
+  background-color: transparent;
 }
 
+/*---------------------------------------------------------------------------------------------------*/
 
 .foto_principal {
-    width: 100%;
-    height: 100vh; 
-    background-color: #ffddfe;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    overflow: hidden; 
+  width: 100%;
+  height: 100vh;
+  background-color: #ffddfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .conteudo {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    position: relative; 
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .conteudo img {
-    width: 1000px; 
-    height: auto; 
-    max-height: 100vh; 
-    object-fit: cover; /* Isso mantém a proporção da imagem */
+  width: 1000px;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover; /* Isso mantém a proporção da imagem */
 }
 
 .conteudo h1 {
-    position: absolute; 
-    top: 20%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #ffffff; 
-    font-family: "Hurricane", cursive !important;
-    font-weight: 400;
-    font-size: 7.3rem; 
-    text-align: center; 
-    text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: "Hurricane", cursive !important;
+  font-weight: 400;
+  font-size: 7.3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-.conteudo h2{
-    position: absolute; 
-    top: 82%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #ffffff; 
-    text-transform: uppercase;
-    font-family: "Quicksand", sans-serif; 
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgb(59, 2, 82); 
-
+.conteudo h2 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(59, 2, 82);
 }
 
-.conteudo span{
-    position: absolute; 
-    top: 90.5%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: #ffffff; 
-    text-transform: uppercase;
-    font-family: "Quicksand", sans-serif; 
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0); 
-
+.conteudo span {
+  position: absolute;
+  top: 90.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 #floral {
-    position: absolute; 
-    top: 40%; 
-    left: 45%; 
-    transform: translateX(-50%); 
-    width: 150px; 
-    height: auto; 
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: auto;
 }
 
-.contagem{
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 80px;
+/*---------------------------------------------------------------------------------------------------*/
+
+.contagem {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
 }
 
-.contagem h1{
-    padding: 40px 0 15px 0;
-    font-family: "Hurricane", cursive !important;
-    font-size: 4.5rem;
-    font-weight: 400;
-    text-shadow: 1px 1px 2px rgb(188, 0, 245); 
-    color: #000;
+.contagem h1 {
+  padding: 40px 0 15px 0;
+  font-family: "Hurricane", cursive !important;
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgb(188, 0, 245);
+  color: #000;
 }
 
 .dados {
-    display: flex;
-    align-items: center; 
-    gap: 25px;
-    margin-top: 50px;
-  }
-  
-  .dados div {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    background-color:#532052;
-    border-radius: 10px;
-    color: #fff;
-    width: 120px;
-    height: 80px;
-    padding: 5px;
-  }
-  
-  .dados div div:first-child {
-    font-size: 3.4em; 
-    font-weight: bold;
-    font-family: "Quicksand", sans-serif; 
-  }
-  
-  .dados div div:last-child {
-    font-size: 1.1em; 
-    text-transform: uppercase;
-    font-family: "Quicksand", sans-serif; 
-    font-weight: bold;
-    margin-bottom: 50px;
-  }
-
-  .religioso{
-    width: 100%;
-    height: auto;
-    background-color: #47165e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-  }
-
-  .religioso img{
-    width: 120px;
-    margin: 60px 0;
-  }
-
-  .texto,.historia{
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .texto h1{
-    font-family: "Quicksand", sans-serif; 
-    font-size: 1.3rem;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-
-  .texto cite{
-    font-family: "Quicksand", sans-serif; 
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .texto p, .historia p{
-    font-family: "Quicksand", sans-serif; 
-    font-size: 1rem;
-    color: #fff;
-    text-align: justify;
-  }
-
-  .nos {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 20px; 
-    background-color: #4d0064ad;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
 }
 
-.nos img{
-    width: 120px;
-    margin: 40px 0;
-  }
+.dados div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #532052;
+  border-radius: 10px;
+  color: #fff;
+  width: 120px;
+  height: 80px;
+  padding: 5px;
+}
+
+.dados div div:first-child {
+  font-size: 3.4em;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+
+.dados div div:last-child {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+.religioso {
+  width: 100%;
+  height: auto;
+  background-color: #47165e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.religioso img,
+#floral3,
+#floral4 {
+  width: 120px;
+  margin: 60px 0;
+}
+
+.texto,
+.historia {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.texto p,
+.historia p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.nos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #160124;
+  padding-bottom: 40px;
+}
+
+.nos img {
+  width: 120px;
+  margin: 40px 0;
+}
 
 .titulo {
-    font-family: "Hurricane", cursive !important;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #ffffff;
+  font-family: "Hurricane", cursive !important;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .carrossel {
-    position: relative;
-    width: 100%; 
-    max-width: 800px; 
-    height: 400px; 
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .imagens {
-    display: flex;
-    transition: transform 1s ease;
-    height: 120%;
+  display: flex;
+  transition: transform 1s ease;
+  height: 120%;
 }
 
 .imagens img {
-    height: auto; 
-    object-fit: contain; 
-    flex: 0 0 100%; 
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 100%;
 }
 
-.historia p{
-    color: #ffffff;
+.historia p {
+  color: #ffffff;
 }
+
+#santo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.cerimonia {
+  width: 100%;
+  height: auto;
+  background-color: #3f173e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo_cerimonia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo_cerimonia h1,
+.conteudo_recepcao h1,
+.conteudo_recepcao h2,
+.conteudo_recepcao h3 {
+  font-family: "Hurricane", cursive !important;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.conteudo_cerimonia img {
+  width: 80%;
+  height: auto;
+  border: 2px solid #ffffff;
+}
+
+.conteudo_cerimonia p,
+.conteudo_recepcao p {
+  color: #ffffff;
+  margin: 35px 0;
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  width: 80%;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.recepcao {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #47165e;
+}
+
+.conteudo_recepcao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteudo_recepcao img {
+  width: 60%;
+  height: auto;
+  margin-top: 15px;
+  border: 2px solid #ffffff;
+}
+
+#text_maps {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin: 35px 0;
+  font-size: 1.2rem;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
