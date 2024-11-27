@@ -189,9 +189,13 @@ header nav ul a:hover {
 
 .religioso img,
 #floral3,
-#floral4 {
+#floral4,
+#floral5,
+#floral6,
+#floral7 {
   width: 120px;
   margin: 60px 0;
+  border: none;
 }
 
 .texto,
@@ -242,7 +246,7 @@ header nav ul a:hover {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
-  color: #000;
+  color: #749775;
 }
 
 .carrossel {
@@ -301,9 +305,9 @@ header nav ul a:hover {
   font-family: "Hurricane", cursive !important;
   text-align: center;
   font-size: 5rem;
-  font-weight: 400;
-  color: #000;
-  margin-bottom: 30px;
+  font-weight: bold;
+  color: #749775;
+  margin-bottom: 20px;
 }
 
 .fotos_cerimonia{
@@ -359,10 +363,88 @@ header nav ul a:hover {
 #text_maps {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
-  color: #fff;
+  color: #000;
   margin: 35px 0;
   font-size: 1.2rem;
 }
 
+
+.lista_presentes{
+  background-color: #fcf9e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista_presentes h1 {
+  font-family: "Hurricane", cursive !important;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #749775;
+  margin: 60px 0 60px 0;
+  letter-spacing: 6px;
+}
+
+#ponto_frio{
+  width: 250px;
+  margin-bottom: 40px;
+  box-shadow: 9px 10px 75px 9px #749775;
+}
+
+.presenca{  
+  background-color: #fffdeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presenca h1{
+  font-family: "Hurricane", cursive !important;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #749775;
+  margin: 60px 0 30px 0;
+  letter-spacing: 6px;
+}
+
+.presenca form{
+  background-color: #749775;
+  margin: 30px 0 60px 0;
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.presenca label{
+  color: #73f778;
+  font-size: 2rem;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.presenca input{
+  padding: 10px;
+  width: 500px;
+  border: 3px solid #5eff00;
+  outline: none;
+  text-align: center;
+}
+
+.presenca button{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 10px 25px ;
+  background-color: #00ff00;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #124b14;
+}
 /*---------------------------------------------------------------------------------------------------*/
 

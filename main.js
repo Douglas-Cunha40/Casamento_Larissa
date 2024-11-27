@@ -59,3 +59,20 @@ function trocarImagem() {
   }
 }
 setInterval(trocarImagem, 2000);
+
+
+
+const telefoneInput = document.getElementById("telefone");
+
+    telefoneInput.addEventListener("input", () => {
+      let input = telefoneInput.value.replace(/\D/g, ""); // Remove caracteres não numéricos
+
+      // Aplica o formato da máscara (__) _____-____
+      if (input.length > 0) input = "(" + input;
+      if (input.length > 3) input = input.slice(0, 3) + ") " + input.slice(3);
+      if (input.length > 10) input = input.slice(0, 10) + "-" + input.slice(10);
+
+      // Limita o tamanho do texto ao formato completo
+      telefoneInput.value = input.slice(0, 15);
+    });
+
