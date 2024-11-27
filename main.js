@@ -41,23 +41,21 @@ const contador = setInterval(function () {
   }
 }, 1000);
 
-
-
-const imagens = document.querySelector('.imagens');
+const imagens = document.querySelector(".imagens");
 const totalImagens = imagens.children.length;
 let index = 0;
 
 function trocarImagem() {
-    index = (index + 1) % totalImagens;
-    if (index === 0) {
-        imagens.style.transition = 'none'; 
-        imagens.style.transform = `translateX(0)`; 
-        setTimeout(() => {
-            imagens.style.transition = 'transform 1s ease'; 
-            imagens.style.transform = `translateX(-${index * 100}%)`; 
-        }, 50); 
-    } else {
-        imagens.style.transform = `translateX(-${index * 100}%)`; 
-    }
+  index = (index + 1) % totalImagens;
+  if (index === 0) {
+    imagens.style.transition = "none";
+    imagens.style.transform = `translateX(0)`;
+    setTimeout(() => {
+      imagens.style.transition = "transform 1s ease";
+      imagens.style.transform = `translateX(-${index * 100}%)`;
+    }, 50);
+  } else {
+    imagens.style.transform = `translateX(-${index * 100}%)`;
+  }
 }
 setInterval(trocarImagem, 2000);
