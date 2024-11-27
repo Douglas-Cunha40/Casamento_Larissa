@@ -435,6 +435,17 @@ header nav ul a:hover {
   text-align: center;
 }
 
+.presenca textarea {
+  padding: 10px 5px;
+   width: 500px !important;
+   height: 140px;
+   margin-top: 80px;
+   margin-bottom: 30px;
+   border: 3px solid #5eff00;
+   resize: none;
+   font-weight: bold;
+}
+
 .presenca button{
   margin-top: 40px;
   margin-bottom: 30px;
@@ -445,6 +456,7 @@ header nav ul a:hover {
   font-weight: bold;
   cursor: pointer;
   color: #124b14;
+  border-radius: 3px;
 }
 /*---------------------------------------------------------------------------------------------------*/
 
