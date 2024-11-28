@@ -1,3 +1,9 @@
+
+window.onload = function () {
+  var audio = document.getElementById("myAudio");
+  audio.muted = false; // Remove o mute para começar a tocar o áudio
+};
+
 document.addEventListener("scroll", function () {
   const header = document.getElementById("header");
 
@@ -130,7 +136,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", toggleNavOnScroll);
 });
 
-window.onload = function () {
-  var audio = document.getElementById("myAudio");
-  audio.muted = false; // Remove o mute para começar a tocar o áudio
-};
+
