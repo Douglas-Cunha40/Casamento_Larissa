@@ -647,7 +647,7 @@ footer a {
   .dados {
     display: flex;
     align-items: center;
-    gap: 25px; /* Ajusta o espaçamento entre os quadrados */
+    gap: 55px; /* Ajusta o espaçamento entre os quadrados */
     margin-top: 30px; /* Diminui a margem superior */
     flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
     justify-content: center; /* Centraliza os itens */
@@ -844,7 +844,7 @@ footer a {
   .dados {
     display: flex;
     align-items: center;
-    gap: 25px; /* Ajusta o espaçamento entre os quadrados */
+    gap: 55px; /* Ajusta o espaçamento entre os quadrados */
     margin-top: 30px; /* Diminui a margem superior */
     flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
     justify-content: center; /* Centraliza os itens */
