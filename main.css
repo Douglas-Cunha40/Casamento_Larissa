@@ -381,7 +381,16 @@ header nav ul a:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: #000000;
-  margin: 60px 0 60px 0;
+  margin: 40px 0 40px 0;
+}
+
+.lista_presentes p{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #000000;
+  margin: 20px 0 40px 0;
+  width: 60%;
 }
 
 #ponto_frio {
