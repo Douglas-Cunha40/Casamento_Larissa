@@ -33,7 +33,7 @@ header nav ul a {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  color: #749775;
+  color: #000000;
   line-height: 1;
   border-radius: 100px;
   border: 2px solid transparent;
@@ -310,10 +310,10 @@ header nav ul a:hover {
   margin-bottom: 20px;
 }
 
-.fotos_cerimonia{
+.fotos_cerimonia {
   display: flex;
   justify-content: center;
-  gap:20px
+  gap: 20px;
 }
 
 .fotos_cerimonia img {
@@ -368,8 +368,7 @@ header nav ul a:hover {
   font-size: 1.2rem;
 }
 
-
-.lista_presentes{
+.lista_presentes {
   background-color: #fcf9e3;
   display: flex;
   flex-direction: column;
@@ -383,33 +382,31 @@ header nav ul a:hover {
   font-weight: bold;
   color: #000000;
   margin: 60px 0 60px 0;
-
 }
 
-#ponto_frio{
+#ponto_frio {
   width: 250px;
   margin-bottom: 40px;
   box-shadow: 9px 10px 75px 9px #749775;
 }
 
-.presenca{  
+.presenca {
   background-color: #fffdeb;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.presenca h1{
+.presenca h1 {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   color: #000000;
   margin: 60px 0 30px 0;
-
 }
 
-.presenca form{
+.presenca form {
   background-color: #749775;
   margin: 30px 0 60px 0;
   width: 35%;
@@ -421,14 +418,14 @@ header nav ul a:hover {
   border: 3px solid #5eff00;
 }
 
-.presenca label{
+.presenca label {
   color: #73f778;
   font-size: 2rem;
   padding-top: 20px;
   font-weight: bold;
 }
 
-.presenca input{
+.presenca input {
   padding: 10px;
   width: 500px;
   border: 3px solid #5eff00;
@@ -438,19 +435,19 @@ header nav ul a:hover {
 
 .presenca textarea {
   padding: 10px 5px;
-   width: 500px !important;
-   height: 140px;
-   margin-top: 80px;
-   margin-bottom: 30px;
-   border: 3px solid #5eff00;
-   resize: none;
-   font-weight: bold;
+  width: 500px !important;
+  height: 140px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border: 3px solid #5eff00;
+  resize: none;
+  font-weight: bold;
 }
 
-.presenca button{
+.presenca button {
   margin-top: 40px;
   margin-bottom: 30px;
-  padding: 10px 25px ;
+  padding: 10px 25px;
   background-color: #00ff00;
   border: none;
   text-transform: uppercase;
@@ -460,7 +457,7 @@ header nav ul a:hover {
   border-radius: 3px;
 }
 
-footer{
+footer {
   background-color: #e7e4cb;
   display: flex;
   flex-direction: column;
@@ -468,12 +465,12 @@ footer{
   padding: 25px 0;
 }
 
-footer cite{
+footer cite {
   font-weight: bold;
   font-size: 1.4rem;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   margin-top: 10px;
   font-family: "Hurricane", cursive !important;
@@ -486,16 +483,16 @@ footer a{
 
 .thanks {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   background-color: #fcfbf5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .agradecimento {
-  text-align: center; 
+  text-align: center;
   background-color: #e7e4cb;
   width: 40%;
   height: 300px;
@@ -505,7 +502,7 @@ footer a{
   border-radius: 10px;
 }
 
-.agradecimento h1{
+.agradecimento h1 {
   font-family: "Hurricane", cursive !important;
   text-transform: uppercase;
   font-weight: bold;
@@ -514,22 +511,416 @@ footer a{
   padding-top: 30px;
 }
 
-.agradecimento p{
+.agradecimento p {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-} 
+}
 
-.agradecimento span{
+.agradecimento span {
   font-size: 2.5rem;
   margin-top: 15px;
 }
 
-.agradecimento a{
-  text-decoration:none;
+.agradecimento a {
+  text-decoration: none;
   margin: 40px 0 40px 0;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
 /*---------------------------------------------------------------------------------------------------*/
+/* Responsividade */
 
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 480px) {
+  .header nav {
+    width: 100%;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #f5f4c8b6;
+    width: 100%;
+    margin-top: 170px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .foto_principal {
+    width: 100%;
+    height: 100vh;
+    background-color: #fcf9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .conteudo {
+    width: 100%; /* Ajusta para ocupar a maior parte da tela */
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo seja empilhado */
+    align-items: center;
+  }
+
+  .conteudo img {
+    width: 100%; /* Escala conforme o container */
+    max-width: 1000px; /* Limite máximo para telas maiores */
+    height: auto;
+    max-height: 100vh;
+    margin-top: 365px;
+  }
+
+  .conteudo h1 {
+    position: absolute;
+    top: 55%; /* Ajusta posição para telas menores */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-family: "Hurricane", cursive !important;
+    font-weight: 400;
+    font-size: 3.5rem; /* Reduz tamanho para telas menores */
+    text-align: center;
+  }
+
+  .conteudo h2 {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem; /* Ajusta para responsividade */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .conteudo span {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem; /* Tamanho menor para telas pequenas */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  .contagem {
+    width: 100%;
+    height: auto;
+    background-color: #fffdeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px; /* Ajusta o padding para telas menores */
+  }
+
+  .contagem h1 {
+    padding: 20px 0 10px 0; /* Reduz o espaçamento vertical */
+    font-family: "Hurricane", cursive !important;
+    font-size: 2.5rem; /* Ajusta para telas menores */
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(224, 255, 182);
+    color: #003302;
+    text-align: center;
+  }
+
+  .dados {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Ajusta o espaçamento entre os quadrados */
+    margin-top: 30px; /* Diminui a margem superior */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .dados div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+
+    color: #ffffff;
+    width: 100px; /* Ajusta o tamanho para telas menores */
+    height: 70px; /* Ajusta a altura */
+    padding: 5px;
+  }
+
+  .dados div div:first-child {
+    font-size: 2.5em; /* Ajusta o tamanho da fonte */
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .dados div div:last-child {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+  }
+
+  .recepcao iframe {
+    min-width: 95%;
+    height: 40%;
+  }
+
+  .presenca form {
+    width: 95%;
+  }
+
+  .presenca input {
+    width: 95%;
+  }
+
+  #recado {
+    width: 95% !important;
+  }
+
+  .agradecimento {
+    text-align: center;
+    background-color: #e7e4cb;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .agradecimento h1 {
+    font-family: "Hurricane", cursive !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px rgb(163, 250, 2);
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .agradecimento p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .agradecimento span {
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+
+  .agradecimento a {
+    text-decoration: none;
+    margin: 40px 0 40px 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .header nav {
+    width: 100%;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #f5f4c8b6;
+    width: 100%;
+    margin-top: 170px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .foto_principal {
+    width: 100%;
+    height: 100vh;
+    background-color: #fcf9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .conteudo {
+    width: 100%; /* Ajusta para ocupar a maior parte da tela */
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo seja empilhado */
+    align-items: center;
+  }
+
+  .conteudo img {
+    width: 100%; /* Escala conforme o container */
+    max-width: 1000px; /* Limite máximo para telas maiores */
+    height: auto;
+    max-height: 100vh;
+    margin-top: 495px;
+  }
+
+  .conteudo h1 {
+    position: absolute;
+    top: 55%; /* Ajusta posição para telas menores */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-family: "Hurricane", cursive !important;
+    font-weight: 400;
+    font-size: 3.5rem; /* Reduz tamanho para telas menores */
+    text-align: center;
+  }
+
+  .conteudo h2 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem; /* Ajusta para responsividade */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .conteudo span {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem; /* Tamanho menor para telas pequenas */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  .contagem {
+    width: 100%;
+    height: auto;
+    background-color: #fffdeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px; /* Ajusta o padding para telas menores */
+  }
+
+  .contagem h1 {
+    padding: 20px 0 10px 0; /* Reduz o espaçamento vertical */
+    font-family: "Hurricane", cursive !important;
+    font-size: 2.5rem; /* Ajusta para telas menores */
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgb(224, 255, 182);
+    color: #003302;
+    text-align: center;
+  }
+
+  .dados {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Ajusta o espaçamento entre os quadrados */
+    margin-top: 30px; /* Diminui a margem superior */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .dados div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+
+    color: #ffffff;
+    width: 100px; /* Ajusta o tamanho para telas menores */
+    height: 70px; /* Ajusta a altura */
+    padding: 5px;
+  }
+
+  .dados div div:first-child {
+    font-size: 2.5em; /* Ajusta o tamanho da fonte */
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .dados div div:last-child {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+  }
+
+  .recepcao iframe {
+    min-width: 95%;
+    height: 40%;
+  }
+
+  .presenca form {
+    width: 95%;
+  }
+
+  .presenca input {
+    width: 95%;
+  }
+
+  #recado {
+    width: 95% !important;
+  }
+
+  .agradecimento {
+    text-align: center;
+    background-color: #e7e4cb;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .agradecimento h1 {
+    font-family: "Hurricane", cursive !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px rgb(163, 250, 2);
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .agradecimento p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .agradecimento span {
+    font-size: 2.5rem;
+    margin-top: 15px;
+  }
+
+  .agradecimento a {
+    text-decoration: none;
+    margin: 40px 0 40px 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+  }
+}
