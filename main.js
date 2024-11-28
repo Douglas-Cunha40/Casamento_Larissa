@@ -1,10 +1,32 @@
 window.onload = function () {
-  var audio = document.getElementById("myAudio");
-  audio.addEventListener("canplaythrough", function () {
-    audio.muted = false; // Remove o mute
-    audio.play(); // Inicia o áudio
+  const audio = document.getElementById("myAudio");
+  const playButton = document.getElementById("playButton");
+
+  // Esconde o botão se a reprodução automática funcionar
+  playButton.style.display = "none";
+
+  // Tenta iniciar a reprodução automaticamente
+  audio.muted = false;
+  audio.play().catch((error) => {
+    console.log("Reprodução automática bloqueada. Interação do usuário necessária.", error);
+
+    // Mostra o botão se a reprodução for bloqueada
+    playButton.style.display = "block";
+  });
+
+  // Configura o botão para iniciar o áudio manualmente
+  playButton.addEventListener("click", function () {
+    audio.muted = false;
+    audio.play().then(() => {
+      console.log("Áudio iniciado com interação do usuário.");
+      playButton.style.display = "none"; // Esconde o botão após tocar
+    }).catch((error) => {
+      console.log("Erro ao reproduzir o áudio:", error);
+    });
   });
 };
+
+
 
 document.addEventListener("scroll", function () {
   const header = document.getElementById("header");
