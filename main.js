@@ -1,7 +1,9 @@
-
 window.onload = function () {
   var audio = document.getElementById("myAudio");
-  audio.muted = false; // Remove o mute para começar a tocar o áudio
+  audio.addEventListener("canplaythrough", function () {
+    audio.muted = false; // Remove o mute
+    audio.play(); // Inicia o áudio
+  });
 };
 
 document.addEventListener("scroll", function () {
